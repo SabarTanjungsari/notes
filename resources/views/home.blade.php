@@ -16,6 +16,18 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+                <div class="card-footer">
+                    @role('admin')
+
+                    Hello admin
+
+                    @endrole
+                    @role('user')
+
+                    Hello user
+
+                    @endrole
+                </div>
             </div>
         </div>
     </div>
